@@ -1,7 +1,7 @@
 //implement the following API: 
 import java.util.*;
 public class Centrality {
-    
+
     private Graph g;
     private BreadthFirstPaths bfp[];
     private int degrees[];
@@ -39,7 +39,6 @@ public class Centrality {
     * value, for each of the four centrality definitions. Ties should be broken in favor of vertices of smallest 
     * index.
     */
-    
     public int degree(int v){
         if(degrees[v] == -1){
             int count = 0;
@@ -63,7 +62,7 @@ public class Centrality {
         }
         return popularVertex;
     }
-    
+
     public int ecc(int v){
         if(ecc[v] == -1){
             if (bfp[v] == null) bfp[v] = new BreadthFirstPaths(g,v);   
@@ -88,7 +87,7 @@ public class Centrality {
         }
         return center;
     }
-    
+
     public double closeness(int v){
         if(closeness[v] == -1){
             if (bfp[v] == null) bfp[v] = new BreadthFirstPaths(g,v);  
@@ -112,8 +111,8 @@ public class Centrality {
             }
         }
         return closest;
-    } 
-    
+    }
+
     public int effEcc(int v){
         if(effEcc[v] == -1){
             ArrayList<Integer> effs = new ArrayList<Integer>();
@@ -166,9 +165,8 @@ public class Centrality {
         * The format should match this sample output.  (Specifically, use printf() with formatting
         * fields “%5.3f“ and “%3d“).
         */
-        In in = new In(args[0]);
-        Graph G = new Graph(in);
-        Centrality cen = new Centrality(G);
+        SymbolGraph G = new SymbolGraph(args[0],"/");
+        SymbolCentrality cen = new SymbolCentrality(G);
         cen.dislpay();
     }   
     
