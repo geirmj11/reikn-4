@@ -174,29 +174,29 @@ public class SymbolCentrality {
     }
 
     public void dislpay(String key) {
-        StdOut.println("          Node  Deg  Ecc  Eff   Clo");
-        System.out.printf("Popular:  "+key+ "%3d  %3d  %3d   %5.3f\n", , degree(sg.index(key)), ecc(sg.index(key)), effEcc(sg.index(key)), closeness(sg.index(key)));
+        StdOut.println(key + "\n           Deg  Ecc  Eff   Clo");
+        System.out.printf("Popular:  %3d  %3d  %3d   %5.3f\n\n", degree(sg.index(key)), ecc(sg.index(key)), effEcc(sg.index(key)), closeness(sg.index(key)));
     }
 
     public static void main(String[] args) {
         /*
         * Example output output tiny.out produces on the sample input tiny.txt. 
         *   
-        *             Node  Deg  Ecc   Eff  Clo 
-        * Popular:    2     4    3     3    0.667
-        * Center:     3     3    2     2    0.667
-        * Eff.ctr:    3     3    2     2    0.667
-        * Closest:    2     4    3     3    0.667
+          Salter, Nicholas
+                     Deg  Ecc  Eff   Clo
+          Popular:    1   12    8   0.158
         *
         * The format should match this sample output.  (Specifically, use printf() with formatting
         * fields “%5.3f“ and “%3d“).
         */
         SymbolGraph SG = new SymbolGraph(args[0], "/");
         SymbolCentrality cen = new SymbolCentrality(SG);
-        cen.dislpay(SG.name(0));
-
-        cen.dislpay("Kevin Bacon");
-        cen.dislpay("Clint Eastwood");
+        //cen.dislpay(SG.name(0));
+        cen.dislpay("Bacon, Kevin");
+        cen.dislpay("Eastwood, Clint");
+        cen.dislpay("Damon, Matt");
+        cen.dislpay("Spacey, Kevin (I)");
+        cen.dislpay("Salter, Nicholas");
     }
 
 }

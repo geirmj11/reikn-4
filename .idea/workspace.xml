@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08722418-7244-45f5-bd02-4217ec74c7ef" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SymbolCentrality.java" afterPath="$PROJECT_DIR$/src/SymbolCentrality.java" />
     </list>
     <ignored path="Skilaverkefni_4.iws" />
@@ -64,7 +63,7 @@
       <file leaf-file-name="SymbolCentrality.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SymbolCentrality.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="177" column="45" selection-start="5515" selection-end="5515" vertical-scroll-proportion="0.6647887">
+            <state line="185" column="15" selection-start="5830" selection-end="5830" vertical-scroll-proportion="0.27946126">
               <folding>
                 <element signature="e#3783#3792#0" expanded="true" />
               </folding>
@@ -75,7 +74,7 @@
       <file leaf-file-name="movies2.txt" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/movies2.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="31" selection-start="3622" selection-end="3623" vertical-scroll-proportion="0.0">
+            <state line="1113" column="66" selection-start="920279" selection-end="920285" vertical-scroll-proportion="-4.4">
               <folding />
             </state>
           </provider>
@@ -470,8 +469,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16312595" sideWeight="0.6729452" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3270548" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16312595" sideWeight="0.57363015" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42636988" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -583,21 +582,9 @@
         <state line="41" column="19" selection-start="1480" selection-end="1480" vertical-scroll-proportion="-0.12343471" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/movies2.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="31" selection-start="3622" selection-end="3623" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tiny.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="3" selection-start="27" selection-end="27" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/algs4.jar!/Graph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="165" column="44" selection-start="4657" selection-end="4723" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Centrality.java">
@@ -614,9 +601,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/movies2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1113" column="66" selection-start="920279" selection-end="920285" vertical-scroll-proportion="-4.4">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/algs4.jar!/Graph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="165" column="44" selection-start="4657" selection-end="4723" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/SymbolCentrality.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="177" column="45" selection-start="5515" selection-end="5515" vertical-scroll-proportion="0.6647887">
+        <state line="185" column="15" selection-start="5830" selection-end="5830" vertical-scroll-proportion="0.27946126">
           <folding>
             <element signature="e#3783#3792#0" expanded="true" />
           </folding>
