@@ -175,7 +175,7 @@ public class SymbolCentrality {
 
     public void dislpay(String key) {
         StdOut.println("          Node  Deg  Ecc  Eff   Clo");
-        System.out.printf("Popular:  %3d  %3d  %3d  %3d   %5.3f\n", sg.index(key), degree(sg.index(key)), ecc(sg.index(key)), effEcc(sg.index(key)), closeness(sg.index(key)));
+        System.out.printf("Popular:  "+key+ "%3d  %3d  %3d   %5.3f\n", , degree(sg.index(key)), ecc(sg.index(key)), effEcc(sg.index(key)), closeness(sg.index(key)));
     }
 
     public static void main(String[] args) {
@@ -193,6 +193,8 @@ public class SymbolCentrality {
         */
         SymbolGraph SG = new SymbolGraph(args[0], "/");
         SymbolCentrality cen = new SymbolCentrality(SG);
+        cen.dislpay(SG.name(0));
+
         cen.dislpay("Kevin Bacon");
         cen.dislpay("Clint Eastwood");
     }
