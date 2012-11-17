@@ -1,4 +1,3 @@
-//implement the following API: 
 import java.util.*;
 public class Centrality {
 
@@ -144,12 +143,21 @@ public class Centrality {
         return effCenter;
     }
     
-    public void dislpay() {
+    public void display() {
            StdOut.println("          Node  Deg  Ecc  Eff   Clo");
         System.out.printf("Popular:  %3d  %3d  %3d  %3d   %5.3f\n",  popularVertex(), degree(popularVertex()), ecc(popularVertex()), effEcc(popularVertex()), closeness(popularVertex()));
         System.out.printf("Center:   %3d  %3d  %3d  %3d   %5.3f\n",   center(), degree(center()), ecc(center()), effEcc(center()), closeness(center()));
         System.out.printf("Eff.ctr:  %3d  %3d  %3d  %3d   %5.3f\n",  effCenter(), degree(effCenter()), ecc(effCenter()), effEcc(effCenter()), closeness(effCenter()));
         System.out.printf("Closest : %3d  %3d  %3d  %3d   %5.3f\n", closest(), degree(closest()), ecc(closest()), effEcc(closest()), closeness(closest()));
+    
+        
+    }
+    
+    public void displayPaths(){
+        ExtendedBreadthFirstPaths EBFP = new ExtendedBreadthFirstPaths(g, 0);
+        System.out.printf("\nNode %d has %d shortest paths to node 0\n", EBFP.getMostPathsVertex(),EBFP.getMostPaths());
+        //Node 117 has 7462 shortest paths to node 0  
+        //public ExtendedBreadthFirstPaths(Graph G, int s) 
     }
     
     public static void main(String[] args){
@@ -165,9 +173,11 @@ public class Centrality {
         * The format should match this sample output.  (Specifically, use printf() with formatting
         * fields “%5.3f“ and “%3d“).
         */
-        SymbolGraph G = new SymbolGraph(args[0],"/");
-        SymbolCentrality cen = new SymbolCentrality(G);
-        cen.dislpay();
+        In in = new In(args[0]);
+        Graph G = new Graph(in);
+        Centrality cen = new Centrality(G);
+        cen.display();
+        cen.displayPaths();
     }   
     
 }
