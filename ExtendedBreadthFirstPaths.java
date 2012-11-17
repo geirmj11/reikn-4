@@ -17,34 +17,30 @@ public class ExtendedBreadthFirstPaths  {
     
     private void generate(){
         Queue<Integer> q = new Queue<Integer>();
-        for (int v = 0; v < g.V(); v++) numOfPaths[v] = Integer.MAX_VALUE;
+        for (int v = 0; v < g.V(); v++) numOfPaths[v] = -1;
         numOfPaths[base] = 1;
         q.enqueue(base);
         levels[base] = 0;
-        int level = 0;
         
         while (!q.isEmpty()) {
             int v = q.dequeue();
-            int sumPaths = 0;
-            level = levels[v];
             for (int w : g.adj(v)) {
-                if (numOfPaths[w] != Integer.MAX_VALUE) {
-                    if(levels[w] != level)sumPaths += numOfPaths[w];
+                if (numOfPaths[w] != -1) {
+                    if(levels[w] < levels[v]) numOfPaths[v] += numOfPaths[w];
                 }
-                else {
+                if(numOfPaths[w] == -1) {
                     q.enqueue(w);
-                    levels[w] = level+1;
+                    levels[w] = levels[v]+1;
+                    numOfPaths[w] = 0;
                }
             }
            
             
-            if(sumPaths > mostPaths) {
-                mostPaths = sumPaths;
+            if(numOfPaths[v] > mostPaths) {
+                mostPaths = numOfPaths[v];
                 mostPathsVertex = v;
             }
-
-            if(v == base) numOfPaths[v] = 1;
-            else numOfPaths[v] = sumPaths;       
+            if(v == base) numOfPaths[v] = 1;       
         }
         
     }
